@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CIE共有放送</title>
+
+<style>
+body{
+    margin:0;
+    background:#111;
+    color:white;
+    font-family:sans-serif;
+}
+
+header{
+    background:#d60000;
+    padding:15px;
+    text-align:center;
+}
+
+header h1{
+    margin:0;
+}
+
+.video-container{
+    position:relative;
+    width:100%;
+    padding-bottom:56.25%; /* 16:9 */
+}
+
+.video-container iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.content{
+    padding:20px;
+}
+
+.program{
+    background:#222;
+    margin-bottom:15px;
+    padding:15px;
+    border-radius:10px;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:15px;
+}
+  .blink {
+  animation: blink-anime 1s infinite;
+}
+
+@keyframes blink-anime {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>CIE共有放送</h1>
+    <p>インターネットテレビ</p>
+</header>
+
+<!-- YouTube埋め込み -->
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dGgXxW3QD2U?si=y8ZxQ9MJhi3t1o2n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div class="content">
+
+    <div class="program">
+        <h2>番組表</h2>
+        <p>
+毎時間0分～50分:「The Hyper Jukebox」<br>
+          50分～0分:「コマーシャルCHANNEL」
+        </p>
+    </div>
+
+</div>
+
+<footer>
+  <a href="https://cietv.f5.si">&copy; 2026 CIE共有放送</a>
+</footer>
+
+</body>
+</html>
